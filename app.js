@@ -7,6 +7,7 @@ const playButton = document.getElementById('play-button');
 const resetButton = document.getElementById('reset-button');
 let userThrow = document.querySelector('input:checked');
 const computerThrowText = document.getElementById('computer-throw-text');
+const computerThrowImage = document.getElementById('computer-throw-image');
 const totalWins = document.getElementById('total-results-wins');
 const totalLosses = document.getElementById('total-results-losses');
 const totalDraws = document.getElementById('total-results-draws');
@@ -28,6 +29,14 @@ function playGame() {
     // console.log('Computer throw: ', computerThrow);
     // console.log('User throw: ', userThrow.value);
     computerThrowText.textContent = computerThrow;
+    if (computerThrow === 'rock') { 
+        computerThrowImage.src = './images/rock.png';
+    } else if (computerThrow === 'paper') { 
+        computerThrowImage.src = './images/paper.png';
+    } else {
+        computerThrowImage.src = './images/scissors.png';
+    }
+    
     const result = checkResult(userThrow.value, computerThrow);
     if (result === 'win') { 
         wins++;
@@ -51,6 +60,7 @@ function initializeGame() {
     totalLosses.textContent = losses;
     totalDraws.textContent = draws;
     computerThrowText.textContent = '—';
+    computerThrowImage.src = './images/mario-blocks.png';
 }
 
 

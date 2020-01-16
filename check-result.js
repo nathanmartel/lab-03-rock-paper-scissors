@@ -1,7 +1,5 @@
-export default checkResult;
-
 // Returns 'win' || 'lose' || 'draw'
-function checkResult(player, computer) {
+export default function checkResult(player, computer) {
     if (player === computer) return 'draw';
     if (player === 'rock') {
         if (computer === 'scissors') { return 'win'; }
