@@ -25,12 +25,13 @@ body {
     margin-top:2rem;
 }
 
-#throw-button {
+#play-button {
     font-size: 1.5rem;
     margin-bottom: 1rem;
 }
 
 footer {
+    z-index: -9999;
     position: fixed;
     width: 100%;
     bottom: 0px;
