@@ -128,3 +128,7 @@ footer p {
 #computer-throw p {
     display: none;
 }
+
+.last-result {
+    color: red;
+}
