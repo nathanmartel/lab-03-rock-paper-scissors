@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Rock • Paper • Scissors</title>
+</head>
+
+<body>
+<header>
+    <h1>Rock • Paper • Scissors</h1>
+    <p>Rock breaks Scissors  •  Paper covers Rock  •  Scissors cut Paper</p>
+
+</header>
+
+
+<!-- User Throw Inputs and Info -->
+<div id="user-throw">
+    <h2>Choose Your Throw</h2>
+    <label id="user-throw-rock">
+        <input type="radio" name="rps" value="rock" />
+        <img id="user-throw-rock-image" src='./images/rock.png'>
+        <p class="rps-type">Rock</p>
+    </label>
+    <label id="user-throw-paper">
+        <input type="radio" name="rps" value="paper" checked />
+        <img id="user-throw-paper-image" src='./images/paper.png'>
+        <p class="rps-type">Paper</p class="rps-type">
+    </label>
+    <label id="user-throw-scissors">
+        <input type="radio" name="rps" value="scissors" />
+        <img id="user-throw-scissors-image" src='./images/scissors.png'>
+        <p class="rps-type">Scissors</p class="rps-type">
+    </label>
+</div>
+
+<p></p>
+
+<!-- Computer Throw Info -->
+<div id="computer-throw">
+    <h2>Computer Threw</h2>
+    <!-- <img src='./images/happy-mac-png-5.png'><span class="fancy-colon">:</span> -->
+    <img id="computer-throw-image" src='' />
+    <p class="rps-type"><span id="computer-throw-text">&mdash;</span></p>
+</div>
+
+
+<div class="buttons">
+    <button id="play-button">Play Game</button>
+</div>
+
+
+<!-- Results Tally -->
+<div id="total-results">
+    <div>
+        <p id="total-results-wins" class= ""></p>
+        Wins
+    </div>
+    <div>
+        <p id="total-results-draws"></p>
+        Draws
+    </div>
+    <div>
+        <p id="total-results-losses"></p>
+        Losses
+    </div>
+</div>
+
+<div class="buttons">
+    <button id="reset-button">Funk This Noise</button>
+</div>
+
+<footer>
+    <p>Please gamble responsibly.</p>
+    <a href="http://www.gambleaware.co.uk/">Gamble Aware</a> • <a href="http://www.gamcare.org.uk/">GamCare</a> • <a href="http://www.gamblersanonymous.org.uk/">Gamblers Anonymous</a>
+</footer>
+
+
+<!-- Call Javascript -->
+<script type="module" src="app.js"></script>
+</body>
+
+
+<!-- 
+Credits:
+Rock, Paper, Scissors images thieved from 
+
+-->
+</html>
