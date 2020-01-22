@@ -70,6 +70,9 @@ function initializeGame() {
     totalWins.textContent = wins;
     totalLosses.textContent = losses;
     totalDraws.textContent = draws;
+    totalWins.style.color = 'white';
+    totalLosses.style.color = 'white';
+    totalDraws.style.color = 'white';
     computerThrowText.textContent = '—';
     computerThrowImage.src = './images/mario-blocks.png';
 }
